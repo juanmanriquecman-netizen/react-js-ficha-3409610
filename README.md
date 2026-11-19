@@ -1,16 +1,36 @@
-# React + Vite
+# Tienda tecnológica con React
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Catálogo de productos creado con React y Vite para el taller de JavaScript aplicado a React.
 
-Currently, two official plugins are available:
+## Requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Node.js y npm
+- Git
 
-## React Compiler
+## Ejecutar el proyecto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Desde la carpeta del proyecto, instala las dependencias y levanta el servidor local:
 
-## Expanding the Oxlint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Abre en el navegador la dirección local que muestra Vite, normalmente `http://localhost:5173/`.
+
+## Comandos disponibles
+
+```bash
+npm run dev    # Inicia el servidor de desarrollo
+npm run lint   # Revisa el código con Oxlint
+npm run build  # Genera la versión de producción en dist/
+```
+
+## Qué incluye
+
+- `practica-js.js`: funciones, funciones flecha, arreglos de objetos y ejercicios con `forEach`, `map`, `filter`, `find`, `some`, `every` y `reduce`.
+- `src/data/productos.js`: catálogo de diez productos.
+- `src/components/ProductoCard.jsx`: tarjeta reutilizable de producto.
+- `src/App.jsx`: catálogo completo, productos disponibles, aviso de agotados y valor del inventario.
+
+La aplicación muestra el estado de inventario y calcula el total usando el precio y el stock de cada producto.
